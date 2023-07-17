@@ -142,7 +142,7 @@ public class Player : MonoBehaviour
     }
     void Recharge() {
         if (input.moveInput == Vector2.zero) {
-            stats.powerAvail += (stats.v_AmbientRecharge * 4) * Time.deltaTime;
+            stats.powerAvail += (stats.v_AmbientRecharge * 7) * Time.deltaTime;
         } else {
             stats.powerAvail += stats.v_AmbientRecharge * Time.deltaTime;
         }
@@ -164,6 +164,7 @@ public class Player : MonoBehaviour
     }
 
     void FlipSprite() {
+        if (isPaused || isDead) return;
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (mousePosition.x < transform.position.x ) {

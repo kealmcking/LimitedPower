@@ -30,6 +30,7 @@ public class RotateGunTowardMouse : MonoBehaviour
 
     void RotateGun() {
         if (player.isPaused || player.isDead) return;
+        
         Vector3 mousePos = aimCursor.transform.position;
         Vector3 rotation = mousePos - transform.position;
         float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;

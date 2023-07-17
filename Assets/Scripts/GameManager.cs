@@ -90,6 +90,7 @@ public class GameManager : MonoBehaviour
     {
         if (playerExp >= expToNextLevel && isLevelingUp == false)
         {
+            player.isPaused = true;
             Cursor.visible = true;
             expToNextLevel *= 1.2f;
             player.stats.playerLevel += 1;
@@ -122,6 +123,7 @@ public class GameManager : MonoBehaviour
         isLevelingUp = false;
         hasSetUpgrades = false;
         Cursor.visible = true;
+        player.isPaused = false;
     }
 
     public void DistributeUpgradeStats(Upgrade upgrade) {
