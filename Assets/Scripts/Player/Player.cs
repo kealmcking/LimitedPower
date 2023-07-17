@@ -92,10 +92,10 @@ public class Player : MonoBehaviour
             EnergyDraw(stats.v_SprintDraw);
         } else if (isSprinting && stats.powerAvail == stats.maxPower * 0.15f) {
             Move(stats.m_Speed);
-            EnergyDraw(stats.v_SprintDraw * 0.125f);
+            EnergyDraw(stats.v_SprintDraw * 0.2f);
         } else {
             Move(stats.m_Speed);
-            EnergyDraw(stats.v_SprintDraw * 0.125f);
+            EnergyDraw(stats.v_SprintDraw * 0.2f);
         }
 
         if (input.moveInput != Vector2.zero)

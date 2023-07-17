@@ -111,7 +111,7 @@ public class Enemy : MonoBehaviour {
         if (collision.tag == "Bullet") {
             sfx.PlayOneShot(hit, 1);
             enemyHP -= 1;
-            Destroy(collision.gameObject);
+            collision.GetComponent<AutoDestruct>().Destruction();
         }
 
         if (collision.tag == "Player") {

@@ -9,6 +9,8 @@ TagManager:
   - ExpDrop
   - PlayerPickupRange
   - PowerPickup
+  - Ignore
+  - Enemy
   layers:
   - Default
   - TransparentFX

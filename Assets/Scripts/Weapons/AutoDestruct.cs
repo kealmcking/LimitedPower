@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class AutoDestruct : MonoBehaviour
 {
+
+    public bool hasBlastRadius;
+
+
+    public GameObject blastRadius;
+
+    IEnumerator destroySelf;
+
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine("DestroySelf");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void Destruction() {
+        if (hasBlastRadius) {
+            GameObject clone = Instantiate(blastRadius, transform.position, Quaternion.identity);
+        }
+        Destroy(this.gameObject);
     }
 
     private IEnumerator DestroySelf() {
         yield return new WaitForSeconds(4);
-        Destroy(this.gameObject);
+        Destruction();
     }
     
 }

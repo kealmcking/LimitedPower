@@ -34,7 +34,7 @@ public class UserInterface : MonoBehaviour
         expSlider.maxValue = gameManager.expToNextLevel;
         slider.maxValue = player.stats.maxPower;
         slider.value = player.stats.powerAvail;
-        sliderImage.color = Color.Lerp(Color.blue, Color.cyan, slider.value / 10);
+        sliderImage.color = Color.Lerp(Color.red, Color.yellow, slider.value / 100);
         for (int i = 0; i < healthBarSprites.Count; i++) {
             EnableHealthObject(i);
         }
