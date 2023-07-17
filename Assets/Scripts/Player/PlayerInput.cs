@@ -11,6 +11,7 @@ public class PlayerInput : MonoBehaviour
     internal Vector2 lookInput;
 
     Player player;
+    PlayerStats stats;
     GameManager gameManager;
 
     private _playerActions _actions;
@@ -18,36 +19,65 @@ public class PlayerInput : MonoBehaviour
     public bool isShooting;
     bool hasShotThisFrame;
 
+    public float shotTimer;
+    bool shouldFire;
+
     private void Awake()
     {
         _actions = new _playerActions();
+        
     }
 
 
 
     public void Start(){
         player = GetComponent<Player>();
+        stats = GetComponent<PlayerStats>();
         gameManager = GameManager.Instance;
+        shotTimer = stats.timeBetweenRegularShots;
     }
 
     private void Update() {
         isShooting = _actions.Player.Fire.ReadValue<float>() > 0;
         isSprinting = _actions.Player.Sprint.ReadValue<float>() > 0;
+        FireshotTimer();
 
-        if (isShooting)
+
+    }
+
+    private void LateUpdate() {
+        IsFiring();
+        IsSprinting();
+    }
+
+    private void FireshotTimer() {
+        if (shotTimer > 0) {
+            shotTimer -= Time.deltaTime;
+            shouldFire = false;
+        } else if (stats.powerAvail < stats.maxPower * 0.1f && shotTimer <= 0) {
+            shouldFire = false;
+        } else {
+            shouldFire = true;
+        }
+    }
+
+    void IsFiring() {
+        if (isShooting && shouldFire)
         {
-            player.shouldFire = true;
-        }
-        else {
-            player.shouldFire = false;
+            player.FireWeapon();
+            shotTimer = stats.timeBetweenRegularShots;
         }
 
+    }
+
+    void IsSprinting() {
         if (isSprinting) {
             player.isSprinting = true;
         } else {
             player.isSprinting = false;
         }
     }
+
 
 
 

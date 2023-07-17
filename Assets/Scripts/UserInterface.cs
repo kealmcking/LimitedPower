@@ -12,7 +12,7 @@ public class UserInterface : MonoBehaviour
     public Slider expSlider;
 
     public Image healthBar;
-    public List<Sprite> healthBarSprites;
+    public List<GameObject> healthBarSprites;
     GameManager gameManager;
 
     public TMP_Text scoreText;
@@ -35,10 +35,22 @@ public class UserInterface : MonoBehaviour
         slider.maxValue = player.stats.maxPower;
         slider.value = player.stats.powerAvail;
         sliderImage.color = Color.Lerp(Color.blue, Color.cyan, slider.value / 10);
-        if (player.stats.playerHP >= 0) {
-            healthBar.sprite = healthBarSprites[player.stats.playerHP];
+        for (int i = 0; i < healthBarSprites.Count; i++) {
+            EnableHealthObject(i);
         }
 
         scoreText.text = "Score: " + gameManager.playerScore;
+    }
+
+    void EnableHealthObject(int health) {
+        if (player.stats.playerHP > health) {
+            healthBarSprites[health].SetActive(true);
+        } else if (player.stats.playerHP <= health) {
+            healthBarSprites[health].SetActive(false);
+        } else if (health < 0) {
+            Debug.Log("HEALTH IS OUT OF RANGE");
+        }
+
+        
     }
 }

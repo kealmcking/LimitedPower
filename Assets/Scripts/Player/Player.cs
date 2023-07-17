@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] CinemachineVirtualCamera virtCam;
     
     bool facingRight;
-    bool canFire;
+    internal bool canFire;
     bool canMove;
 
     internal bool isSprinting;
@@ -18,9 +18,12 @@ public class Player : MonoBehaviour
     internal bool shouldFire;
     internal bool playerHasIFrames;
 
-    public Vector3 firePoint;
+    Vector3 firePoint;
 
-    public GameObject rShotPoint, lShotPoint;
+    public GameObject shotPoint;
+    public GameObject rGunPoint, lGunPoint;
+
+    public GameObject weapon;
 
     [Header("References")]
     public AudioSource sfx;
@@ -52,7 +55,6 @@ public class Player : MonoBehaviour
         input = GetComponent<PlayerInput>();
         renderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        firePoint = rShotPoint.transform.position;
     }
 
     // Update is called once per frame
@@ -61,10 +63,7 @@ public class Player : MonoBehaviour
 
         PowerUnderTenPercent();
         UpdatePickupRange();
-        FlipFirePoint();
         FlipSprite();
-        ShotCountdown();
-        FireWeapon();
         Recharge();
         Dead();
     }
@@ -93,8 +92,10 @@ public class Player : MonoBehaviour
             EnergyDraw(stats.v_SprintDraw);
         } else if (isSprinting && stats.powerAvail == stats.maxPower * 0.15f) {
             Move(stats.m_Speed);
+            EnergyDraw(stats.v_SprintDraw * 0.125f);
         } else {
             Move(stats.m_Speed);
+            EnergyDraw(stats.v_SprintDraw * 0.125f);
         }
 
         if (input.moveInput != Vector2.zero)
@@ -117,31 +118,16 @@ public class Player : MonoBehaviour
         stats.powerAvail -= power;
     }
 
-    public void ShotCountdown()
-    {
-        if (stats.timer > 0) {
-            stats.timer -= Time.deltaTime;
-        }
-        else if (stats.powerAvail < stats.maxPower * 0.1f) {
-            canFire = false;
-        }
-        else {
-            canFire = true;
-        }
-    }
-
     public void FireWeapon() {
-        if (!canFire) return;
-        if (!shouldFire) return;
-
+        RotateGunTowardMouse gun = weapon.GetComponent<RotateGunTowardMouse>();
+        gun.PlayFireAnim();
         sfx.PlayOneShot(fire, 1);
         StartCoroutine(_ProcessShake(15f, 0.25f));
         EnergyDraw(stats.v_ShootDraw);
-        stats.timer = stats.timeBetweenRegularShots;
+        firePoint = shotPoint.transform.position;
         Rigidbody2D clone = Instantiate(firePrefab, firePoint, Quaternion.identity);
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         clone.velocity = transform.TransformDirection((mousePosition - firePoint) * stats.m_BulletSpeed);
-        canFire = false;
     }
 
     private IEnumerator _ProcessShake(float shakeIntensity = 5f, float shakeTiming = 0.5f) {
@@ -180,23 +166,26 @@ public class Player : MonoBehaviour
     void FlipSprite() {
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (mousePosition.x > transform.position.x && !facingRight) {
-            facingRight = true;
-            renderer.flipX = false;
-        } else if (mousePosition.x < transform.position.x && facingRight) {
-            facingRight = false;
-            renderer.flipX = true;
-        }
-    }
+        if (mousePosition.x < transform.position.x ) {
+            weapon.transform.position = lGunPoint.transform.position;
+            if (!facingRight) {
+                facingRight = true;
+                renderer.flipX = false;
+                weapon.GetComponent<SpriteRenderer>().flipY = true;
+            }
 
-    void FlipFirePoint() {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (mousePosition.x > transform.position.x) {
-            firePoint = rShotPoint.transform.position;
-        } else if (mousePosition.x < transform.position.x) {
-            firePoint = lShotPoint.transform.position;
+        } else if (mousePosition.x > transform.position.x && facingRight) {
+            weapon.transform.position = rGunPoint.transform.position;
+            if (facingRight) {
+                facingRight = false;
+                renderer.flipX = true;
+                weapon.GetComponent<SpriteRenderer>().flipY = false;
+            }
+
         }
+
     }
+    
 
     void PowerUnderTenPercent() {
         if (stats.powerAvail > stats.maxPower * 0.1f) {

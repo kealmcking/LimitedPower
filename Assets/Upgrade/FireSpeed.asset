@@ -17,7 +17,7 @@ MonoBehaviour:
   m_ambientRechargeUpgrade: 0
   m_speedUpgrade: 0
   m_sprintSpeedUpgrade: 0
-  m_shotSpeedUpgrade: 2
+  m_shotSpeedUpgrade: 0.05
   m_pickupRangeUpgrade: 0
   m_name: Gun Maintenance
   m_description: Slighty Faster Shot Speed
