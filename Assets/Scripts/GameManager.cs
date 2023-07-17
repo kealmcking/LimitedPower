@@ -13,31 +13,70 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] internal int playerScore;
     [SerializeField] float playerTime;
+    [SerializeField] internal int playerExp;
+
+    [SerializeField] internal Upgrade selectedUpgrade;
+
+    [SerializeField] UpgradeButton button01, button02, button03;
+
+
+    public float expToNextLevel;
+
+    internal bool isLevelingUp;
+
+    bool hasSetUpgrades;
 
     [SerializeField] int highScore;
+    [SerializeField] int playerLevel;
 
-    bool isPaused;
+    public bool isPaused;
+
+    bool canOpenPauseMenu;
 
     public float enemyCircleRadius;
 
     float timeTillNextEnemy;
     public float enemyTime;
 
+    public static GameManager Instance { get; private set; }
+
+    void Awake() { 
+        Time.timeScale = 1.0f;
+        InstanceCheck();
+    }
+
+    private void InstanceCheck() {
+        if (Instance != null && Instance != this) {
+            Destroy(this);
+            return;
+        }
+        Instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
         ScoreLoad();
         player = GameObject.Find("Player").GetComponent<Player>();
+        canOpenPauseMenu = true;
+        isPaused = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        playerScore = player.playerScore;
+        PauseMenu();
+        playerScore = player.stats.playerScore;
+        playerExp = player.stats.playerExp;
         IncreaseSpawnRate();
         CheckIfPlayerDead();
-        PauseMenu();
-        SpawnEnemies();
+        LevelUp();
+        if (!isPaused)
+        {
+            SpawnEnemies();
+        }
         enemyTime = Mathf.Clamp(enemyTime, 0.5f, enemyTime);
     }
 
@@ -47,19 +86,66 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void LevelUp()
+    {
+        if (playerExp >= expToNextLevel && isLevelingUp == false)
+        {
+            Cursor.visible = true;
+            expToNextLevel *= 1.2f;
+            player.stats.playerLevel += 1;
+            playerLevel = player.stats.playerLevel;
+            player.stats.powerAvail = player.stats.maxPower;
+            if (!hasSetUpgrades) {
+                Debug.Log("Is In Loop");
+                button01.SetRandomUpgrade();
+                button02.SetRandomUpgrade();
+                button03.SetRandomUpgrade();
+                hasSetUpgrades = true;
+            }
+
+            userInterface.levelUpMenu.SetActive(true);
+            canOpenPauseMenu = false;
+            playerExp = 0;
+            player.stats.playerExp = playerExp;
+            Time.timeScale = 0;
+
+
+        }
+    }
+
+    public void CloseLevelUpMenu() {
+        DistributeUpgradeStats(selectedUpgrade);
+
+        Time.timeScale = 1;
+        userInterface.levelUpMenu.SetActive(false);
+        canOpenPauseMenu = true;
+        isLevelingUp = false;
+        hasSetUpgrades = false;
+        Cursor.visible = true;
+    }
+
+    public void DistributeUpgradeStats(Upgrade upgrade) {
+        player.stats.playerHP += upgrade.m_healthUpgrade;
+        player.stats.maxPower += upgrade.m_maxPowerUpgrade;
+        player.stats.v_AmbientRecharge += upgrade.m_ambientRechargeUpgrade;
+        player.stats.m_Speed += upgrade.m_speedUpgrade;
+        player.stats.m_SprintSpeed += upgrade.m_sprintSpeedUpgrade;
+        player.stats.timeBetweenRegularShots -= upgrade.m_shotSpeedUpgrade;
+        player.stats.v_PickupRange += upgrade.m_pickupRangeUpgrade;
+    }
+
     void SpawnEnemies() {
-        if (!player.isDead || !player.isPaused) {
+        if (!player.isDead) {
             timeTillNextEnemy -= Time.deltaTime;
             if (timeTillNextEnemy <= 0) {
                 Instantiate(enemy, player.transform.position - RandomPointOnCircleEdge(enemyCircleRadius), Quaternion.identity);
                 timeTillNextEnemy = enemyTime;
             }
-
         }
     }
 
     void IncreaseSpawnRate() {
-        enemyTime -= 0.01f * Time.deltaTime;
+        enemyTime -= 0.005f * Time.deltaTime;
     }
 
     private Vector3 RandomPointOnCircleEdge(float radius) {
@@ -68,17 +154,15 @@ public class GameManager : MonoBehaviour
     }
 
     void PauseMenu() {
-        if (Input.GetKeyDown(KeyCode.Escape) && !player.isDead) {
-            if (!isPaused) {
-                player.animator.speed = 0;
+        if (!canOpenPauseMenu) return;
+        if (!player.isDead) {
+            if (isPaused) {
+                Time.timeScale = 0;
                 userInterface.pauseMenu.SetActive(true);
-                isPaused = true;
             } else {
-                player.animator.speed = 1;
+                Time.timeScale = 1;
                 userInterface.pauseMenu.SetActive(false);
-                isPaused = false;
             }
-            player.isPaused = isPaused;
         }
     }
 
@@ -90,8 +174,16 @@ public class GameManager : MonoBehaviour
         }
         
         userInterface.currentScoreText.text = "Current Score: " + playerScore;
-        userInterface.gameOverMenu.SetActive(true);
+        StartCoroutine(WaitToShowGameOver());
+
         ScoreSave();
+    }
+
+    private IEnumerator WaitToShowGameOver() {
+
+        yield return new WaitForSeconds(1);
+        Time.timeScale = 0;
+        userInterface.gameOverMenu.SetActive(true);
     }
 
     public void QuitGame() {

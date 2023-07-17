@@ -9,6 +9,7 @@ public class UserInterface : MonoBehaviour
     public Player player;
     public Slider slider;
     public Image sliderImage;
+    public Slider expSlider;
 
     public Image healthBar;
     public List<Sprite> healthBarSprites;
@@ -17,7 +18,7 @@ public class UserInterface : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text highScoreText, currentScoreText;
 
-    public GameObject pauseMenu, gameOverMenu, tutorialMenu;
+    public GameObject pauseMenu, gameOverMenu, tutorialMenu, levelUpMenu;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +30,15 @@ public class UserInterface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        slider.maxValue = player.maxPower;
-        slider.value = player.powerAvail;
-        sliderImage.color = Color.Lerp(Color.red, Color.green, slider.value / 20);
-        healthBar.sprite = healthBarSprites[player.playerHP];
+        expSlider.value = gameManager.playerExp;
+        expSlider.maxValue = gameManager.expToNextLevel;
+        slider.maxValue = player.stats.maxPower;
+        slider.value = player.stats.powerAvail;
+        sliderImage.color = Color.Lerp(Color.blue, Color.cyan, slider.value / 10);
+        if (player.stats.playerHP >= 0) {
+            healthBar.sprite = healthBarSprites[player.stats.playerHP];
+        }
+
         scoreText.text = "Score: " + gameManager.playerScore;
     }
 }
