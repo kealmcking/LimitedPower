@@ -133,7 +133,11 @@ public class GameManager : MonoBehaviour
         player.stats.m_Speed += upgrade.m_speedUpgrade;
         player.stats.m_SprintSpeed += upgrade.m_sprintSpeedUpgrade;
         player.stats.timeBetweenRegularShots -= upgrade.m_shotSpeedUpgrade;
+        player.stats.v_ShootDraw += upgrade.m_shotPowerDrawUpgrade;
         player.stats.v_PickupRange += upgrade.m_pickupRangeUpgrade;
+        if (upgrade.changeAmmoType) {
+            player.firePrefab = upgrade.newAmmoType;
+        }
     }
 
     void SpawnEnemies() {

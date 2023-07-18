@@ -12,9 +12,14 @@ public class Upgrade : ScriptableObject
     public float m_speedUpgrade;
     public float m_sprintSpeedUpgrade;
     public float m_shotSpeedUpgrade;
+    public float m_shotPowerDrawUpgrade;
     public float m_pickupRangeUpgrade;
 
     public string m_name;
     public string m_description;
+
+    public bool changeAmmoType;
+
+    public Rigidbody2D newAmmoType;
 
 }

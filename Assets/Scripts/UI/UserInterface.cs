@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class UserInterface : MonoBehaviour
 {
@@ -16,7 +17,9 @@ public class UserInterface : MonoBehaviour
     GameManager gameManager;
 
     public TMP_Text scoreText;
+    public TMP_Text powerPercentText;
     public TMP_Text highScoreText, currentScoreText;
+    public TMP_Text levelText;
 
     public GameObject pauseMenu, gameOverMenu, tutorialMenu, levelUpMenu;
     // Start is called before the first frame update
@@ -30,7 +33,9 @@ public class UserInterface : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        MovePowerTextToTenPercentOfSliderWidth();
         expSlider.value = gameManager.playerExp;
+        levelText.text = "LEVEL: " + player.stats.playerLevel;
         expSlider.maxValue = gameManager.expToNextLevel;
         slider.maxValue = player.stats.maxPower;
         slider.value = player.stats.powerAvail;
@@ -52,5 +57,14 @@ public class UserInterface : MonoBehaviour
         }
 
         
+    }
+
+    void MovePowerTextToTenPercentOfSliderWidth() {
+        RectTransform myRectTransform = powerPercentText.GetComponent<RectTransform>();
+        float sliderHeight = slider.fillRect.rect.width;
+        float sliderHeightCorrected = sliderHeight / 10;
+        float tenPercentOfSliderHeight = sliderHeightCorrected;
+        Vector3 newTextPos = new Vector3(tenPercentOfSliderHeight, myRectTransform.localPosition.y,myRectTransform.localPosition.z);
+        myRectTransform.localPosition = newTextPos;
     }
 }

@@ -1,0 +1,1020 @@
+fileFormatVersion: 2
+guid: e6d2e60d90354e74aa481d660fc127de
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 105
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 90
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb90f1e182a09843a95c451afb97d11
+      internalID: 843943780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 90
+        width: 13
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f278352fb8e2ce14bac9abfd8093989d
+      internalID: 110561039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 90
+        width: 11
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbd235699983224a9abeeac5190db93
+      internalID: -773287122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 90
+        width: 13
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b61e855ffb5248448df0f8fb67f2594
+      internalID: 539233227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 90
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3150b194dafe3794898db49a258620ea
+      internalID: 243165520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_5
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 90
+        width: 15
+        height: 9
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2ad49840080e946bbe1a89722f8d14
+      internalID: -1108816994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 75
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6a66b3524f38240ac16fb9a1f24d85
+      internalID: -1035415389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_7
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 75
+        width: 13
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f3672fd5807f745a6870ef72bede05
+      internalID: 295662068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 75
+        width: 11
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4177726f2e045eb488d76f0136946d7d
+      internalID: -80613235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_9
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 75
+        width: 13
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb13ea3983f24448a901160145e708d
+      internalID: 287250247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_10
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 75
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc06976c6a92b849b4bb15c8293132c
+      internalID: 384897558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_11
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 75
+        width: 15
+        height: 9
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9922c1cde94f6834b87cdac51f44e656
+      internalID: -1944040203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 60
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a038e6de0d519bb4bb72e4d1d703b8db
+      internalID: 1421278624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_13
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 60
+        width: 13
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3971fbed145eb44393c2b071f83110c
+      internalID: -1978328950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_14
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 60
+        width: 11
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca96a5d2898e734d9fad778e2f3b541
+      internalID: 1453772815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_15
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 60
+        width: 13
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65e6cdc5ae292f4aa2a1e6b95e0c655
+      internalID: 1230291264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 60
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cdea143e63efeb4e8dcd53d4e29f5b8
+      internalID: -1600153671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_17
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 60
+        width: 15
+        height: 9
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031be5b0beaf96141946a355393dc2ad
+      internalID: 993139685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_18
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 45
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb69489601b6c442907825d46554243
+      internalID: -998043625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_19
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 45
+        width: 13
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843f7719a517e9242bfa372d49788277
+      internalID: -2132734452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_20
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 45
+        width: 11
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe692db3a01c864d8250cb4852faeb6
+      internalID: 1174029330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_21
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 45
+        width: 13
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41352aa44f6ef9f4ea14f10ab4f5bee9
+      internalID: -1015248563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_22
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 45
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51c315e71135444588b4c37a66faacb
+      internalID: -916666158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_23
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 45
+        width: 15
+        height: 9
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefb57e6664b1e04bace78991c3a1553
+      internalID: -832199394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03091bf0f4c672a4ead36f1ed53b79c3
+      internalID: 523703716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_25
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 15
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96dd893d5c52a8441b9954e355babb58
+      internalID: -964134344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_26
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 30
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4409529ac3ccefb4ea2562ccb14a7c4b
+      internalID: 1495971669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_27
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 24
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274f423806b0d394fb653c31f12f194a
+      internalID: 299891430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_28
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 15
+        width: 15
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c98da1a8a6be5b4faa60571a55377df
+      internalID: -1528377432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_29
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 30
+        width: 13
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfa07e50674b494888d783c4af315c6
+      internalID: 1528320604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_30
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1
+        width: 20
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe30b67ec5528e74194c13ce8317cd54
+      internalID: -680762302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_31
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 30
+        width: 11
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca7d813013d22f45bc22c8dab6b9d81
+      internalID: 1229143904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_32
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 2
+        width: 33
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f15d46f1c3ff641b9905f420ccd8c6
+      internalID: 606641964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_33
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 30
+        width: 15
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf287f289b018a4d9a2312c43e669ee
+      internalID: -468533398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_34
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2
+        width: 32
+        height: 14
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70be62a55792c35409610f4197520bc3
+      internalID: -830447881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_35
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2
+        width: 40
+        height: 15
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c134c33d1512e5346a433ea2b5c9642e
+      internalID: 1384755944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_36
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2
+        width: 53
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9acbea0a72fc8b488ae0ab2a157a4ae
+      internalID: -642986759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_37
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 30
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e214e11bd84747409c23fa1268dc897
+      internalID: -1718059182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_38
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 30
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75646e2f37c94aa4aa07e5007cbdc0d6
+      internalID: 645413165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_39
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 30
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffcfe965563d1344a9d86e25f7c6cc17
+      internalID: -1197570101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      34x15 Monster 1 with shadows_0: 843943780
+      34x15 Monster 1 with shadows_1: 110561039
+      34x15 Monster 1 with shadows_10: 384897558
+      34x15 Monster 1 with shadows_11: -1944040203
+      34x15 Monster 1 with shadows_12: 1421278624
+      34x15 Monster 1 with shadows_13: -1978328950
+      34x15 Monster 1 with shadows_14: 1453772815
+      34x15 Monster 1 with shadows_15: 1230291264
+      34x15 Monster 1 with shadows_16: -1600153671
+      34x15 Monster 1 with shadows_17: 993139685
+      34x15 Monster 1 with shadows_18: -998043625
+      34x15 Monster 1 with shadows_19: -2132734452
+      34x15 Monster 1 with shadows_2: -773287122
+      34x15 Monster 1 with shadows_20: 1174029330
+      34x15 Monster 1 with shadows_21: -1015248563
+      34x15 Monster 1 with shadows_22: -916666158
+      34x15 Monster 1 with shadows_23: -832199394
+      34x15 Monster 1 with shadows_24: 523703716
+      34x15 Monster 1 with shadows_25: -964134344
+      34x15 Monster 1 with shadows_26: 1495971669
+      34x15 Monster 1 with shadows_27: 299891430
+      34x15 Monster 1 with shadows_28: -1528377432
+      34x15 Monster 1 with shadows_29: 1528320604
+      34x15 Monster 1 with shadows_3: 539233227
+      34x15 Monster 1 with shadows_30: -680762302
+      34x15 Monster 1 with shadows_31: 1229143904
+      34x15 Monster 1 with shadows_32: 606641964
+      34x15 Monster 1 with shadows_33: -468533398
+      34x15 Monster 1 with shadows_34: -830447881
+      34x15 Monster 1 with shadows_35: 1384755944
+      34x15 Monster 1 with shadows_36: -642986759
+      34x15 Monster 1 with shadows_37: -1718059182
+      34x15 Monster 1 with shadows_38: 645413165
+      34x15 Monster 1 with shadows_39: -1197570101
+      34x15 Monster 1 with shadows_4: 243165520
+      34x15 Monster 1 with shadows_5: -1108816994
+      34x15 Monster 1 with shadows_6: -1035415389
+      34x15 Monster 1 with shadows_7: 295662068
+      34x15 Monster 1 with shadows_8: -80613235
+      34x15 Monster 1 with shadows_9: 287250247
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

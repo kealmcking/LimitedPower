@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc792140a4c79d4dae3fca9c53bb649, type: 3}
+  m_Name: ExplosiveBullets
+  m_EditorClassIdentifier: 
+  m_healthUpgrade: 0
+  m_maxPowerUpgrade: 0
+  m_ambientRechargeUpgrade: 0
+  m_speedUpgrade: 0
+  m_sprintSpeedUpgrade: 0
+  m_shotSpeedUpgrade: -0.3
+  m_shotPowerDrawUpgrade: 3
+  m_pickupRangeUpgrade: 0
+  m_name: Explosive Shots
+  m_description: Shot speed is lowered, but bullets explode on impact
+  changeAmmoType: 1
+  newAmmoType: {fileID: -2420151107603393402, guid: a4dd112c61c5c8c449de90a11a3dca83, type: 3}
