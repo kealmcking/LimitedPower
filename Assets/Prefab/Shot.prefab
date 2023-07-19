@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: -2112139502, guid: 8fe521b588c8d1241916c7d8c0330626, type: 3}
+  m_Sprite: {fileID: -259869399, guid: a4b65f71ef92df048b41cba49760a896, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -162,4 +162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasBlastRadius: 0
+  sfx: {fileID: 0}
+  hit: {fileID: 8300000, guid: 73c8bc88ea7189e4c9b4234bf4d57a61, type: 3}
   blastRadius: {fileID: 0}
+  hitAnim: {fileID: 5142566782473993738, guid: 43100775fdeed1141a6157a30b3f0efc, type: 3}
+  bulletDamage: 1

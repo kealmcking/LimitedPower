@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
 
     public GameObject shotPoint;
     public GameObject rGunPoint, lGunPoint;
+    public GameObject aimPoint;
 
     public GameObject weapon;
 
@@ -88,12 +89,15 @@ public class Player : MonoBehaviour
 
     void MovePlayer() {
         if (isSprinting && stats.powerAvail > stats.maxPower * 0.15f) {
+            animator.SetBool("isSprinting", true);
             Move(stats.m_SprintSpeed);
             EnergyDraw(stats.v_SprintDraw);
         } else if (isSprinting && stats.powerAvail == stats.maxPower * 0.15f) {
+            animator.SetBool("isSprinting", false);
             Move(stats.m_Speed);
             EnergyDraw(stats.v_SprintDraw * 0.2f);
         } else {
+            animator.SetBool("isSprinting", false);
             Move(stats.m_Speed);
             EnergyDraw(stats.v_SprintDraw * 0.2f);
         }
@@ -127,7 +131,7 @@ public class Player : MonoBehaviour
         firePoint = shotPoint.transform.position;
         Rigidbody2D clone = Instantiate(firePrefab, firePoint, Quaternion.identity);
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        clone.velocity = transform.TransformDirection((mousePosition - firePoint) * stats.m_BulletSpeed);
+        clone.velocity = transform.TransformDirection((aimPoint.transform.position - firePoint) * stats.m_BulletSpeed);
     }
 
     private IEnumerator _ProcessShake(float shakeIntensity = 5f, float shakeTiming = 0.5f) {
@@ -171,15 +175,15 @@ public class Player : MonoBehaviour
             weapon.transform.position = lGunPoint.transform.position;
             if (!facingRight) {
                 facingRight = true;
-                renderer.flipX = false;
+                renderer.flipX = true;
                 weapon.GetComponent<SpriteRenderer>().flipY = true;
             }
 
-        } else if (mousePosition.x > transform.position.x && facingRight) {
-            weapon.transform.position = rGunPoint.transform.position;
+        } else if (mousePosition.x > transform.position.x ) {
+           weapon.transform.position = rGunPoint.transform.position;
             if (facingRight) {
                 facingRight = false;
-                renderer.flipX = true;
+                renderer.flipX = false;
                 weapon.GetComponent<SpriteRenderer>().flipY = false;
             }
 

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-    public int enemyHP;
     Animator animator;
 
     [SerializeField] AudioSource sfx;
@@ -21,6 +20,8 @@ public class Enemy : MonoBehaviour {
     public Rigidbody2D rb2D;
 
     public Player player;
+   
+    public bool shouldFollowPlayer;
     bool soundPlayed;
 
     bool facingRight;
@@ -42,13 +43,13 @@ public class Enemy : MonoBehaviour {
     void Update()
     {
         if (player.isPaused) return;
+        if (!shouldFollowPlayer) return;
         FlipSprite();
+        
         FollowPlayer();
-        Die();
     }
 
-    void Die() {
-        if (enemyHP < 1) {
+    internal void Die() {
             animator.SetBool("hasDied", true);
             StartCoroutine(TimeTillDestroy());
             
@@ -85,7 +86,6 @@ public class Enemy : MonoBehaviour {
                 soundPlayed = true;
             }
             
-        }
     }
 
     private void SpawnPickups(GameObject objectToInstantiate) { 
@@ -109,8 +109,7 @@ public class Enemy : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.tag == "Bullet") {
-            sfx.PlayOneShot(hit, 1);
-            enemyHP -= 1;
+            
             collision.GetComponent<Bullet>().Destruction();
         }
 

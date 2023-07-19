@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 105
+  spritePixelsToUnits: 10
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,11 +126,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 90
-        width: 15
-        height: 10
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -147,11 +147,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_1
       rect:
         serializedVersion: 2
-        x: 43
+        x: 34
         y: 90
-        width: 13
-        height: 11
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -168,11 +168,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_2
       rect:
         serializedVersion: 2
-        x: 78
+        x: 68
         y: 90
-        width: 11
-        height: 12
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -189,11 +189,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_3
       rect:
         serializedVersion: 2
-        x: 111
+        x: 102
         y: 90
-        width: 13
-        height: 12
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -210,11 +210,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_4
       rect:
         serializedVersion: 2
-        x: 144
+        x: 136
         y: 90
-        width: 15
-        height: 10
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -231,11 +231,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_5
       rect:
         serializedVersion: 2
-        x: 178
+        x: 170
         y: 90
-        width: 15
-        height: 9
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -252,11 +252,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_6
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 75
-        width: 15
-        height: 10
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -273,11 +273,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_7
       rect:
         serializedVersion: 2
-        x: 43
+        x: 34
         y: 75
-        width: 13
-        height: 11
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -294,11 +294,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_8
       rect:
         serializedVersion: 2
-        x: 78
+        x: 68
         y: 75
-        width: 11
-        height: 12
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -315,11 +315,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_9
       rect:
         serializedVersion: 2
-        x: 111
+        x: 102
         y: 75
-        width: 13
-        height: 12
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -336,11 +336,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_10
       rect:
         serializedVersion: 2
-        x: 144
+        x: 136
         y: 75
-        width: 15
-        height: 10
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -357,11 +357,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_11
       rect:
         serializedVersion: 2
-        x: 178
+        x: 170
         y: 75
-        width: 15
-        height: 9
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -378,11 +378,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_12
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 60
-        width: 15
-        height: 10
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -399,11 +399,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_13
       rect:
         serializedVersion: 2
-        x: 43
+        x: 34
         y: 60
-        width: 13
-        height: 11
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -420,11 +420,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_14
       rect:
         serializedVersion: 2
-        x: 78
+        x: 68
         y: 60
-        width: 11
-        height: 12
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -441,11 +441,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_15
       rect:
         serializedVersion: 2
-        x: 111
+        x: 102
         y: 60
-        width: 13
-        height: 12
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -462,11 +462,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_16
       rect:
         serializedVersion: 2
-        x: 144
+        x: 136
         y: 60
-        width: 15
-        height: 10
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -483,11 +483,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_17
       rect:
         serializedVersion: 2
-        x: 178
+        x: 170
         y: 60
-        width: 15
-        height: 9
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -504,11 +504,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_18
       rect:
         serializedVersion: 2
-        x: 8
+        x: 0
         y: 45
-        width: 15
-        height: 10
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -525,11 +525,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_19
       rect:
         serializedVersion: 2
-        x: 43
+        x: 34
         y: 45
-        width: 13
-        height: 11
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -546,11 +546,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_20
       rect:
         serializedVersion: 2
-        x: 78
+        x: 68
         y: 45
-        width: 11
-        height: 12
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -567,11 +567,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_21
       rect:
         serializedVersion: 2
-        x: 111
+        x: 102
         y: 45
-        width: 13
-        height: 12
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -588,11 +588,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_22
       rect:
         serializedVersion: 2
-        x: 144
+        x: 136
         y: 45
-        width: 15
-        height: 10
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -609,11 +609,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_23
       rect:
         serializedVersion: 2
-        x: 178
+        x: 170
         y: 45
-        width: 15
-        height: 9
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -630,11 +630,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_24
       rect:
         serializedVersion: 2
-        x: 8
-        y: 0
-        width: 15
-        height: 10
-      alignment: 6
+        x: 0
+        y: 30
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -651,11 +651,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_25
       rect:
         serializedVersion: 2
-        x: 8
-        y: 15
-        width: 15
-        height: 10
-      alignment: 6
+        x: 34
+        y: 30
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -672,11 +672,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_26
       rect:
         serializedVersion: 2
-        x: 8
+        x: 68
         y: 30
-        width: 15
-        height: 10
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -693,11 +693,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_27
       rect:
         serializedVersion: 2
-        x: 39
-        y: 0
-        width: 24
-        height: 13
-      alignment: 6
+        x: 102
+        y: 30
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -714,11 +714,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_28
       rect:
         serializedVersion: 2
-        x: 42
-        y: 15
-        width: 15
-        height: 10
-      alignment: 6
+        x: 136
+        y: 30
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -735,11 +735,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_29
       rect:
         serializedVersion: 2
-        x: 43
+        x: 170
         y: 30
-        width: 13
-        height: 11
-      alignment: 6
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -756,11 +756,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_30
       rect:
         serializedVersion: 2
-        x: 71
-        y: 1
-        width: 20
-        height: 11
-      alignment: 6
+        x: 204
+        y: 30
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -777,11 +777,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_31
       rect:
         serializedVersion: 2
-        x: 78
-        y: 30
-        width: 11
-        height: 12
-      alignment: 6
+        x: 0
+        y: 15
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -798,11 +798,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_32
       rect:
         serializedVersion: 2
-        x: 93
-        y: 2
-        width: 33
-        height: 13
-      alignment: 6
+        x: 34
+        y: 15
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -819,11 +819,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_33
       rect:
         serializedVersion: 2
-        x: 110
-        y: 30
-        width: 15
-        height: 11
-      alignment: 6
+        x: 0
+        y: 0
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -840,11 +840,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_34
       rect:
         serializedVersion: 2
-        x: 129
-        y: 2
-        width: 32
-        height: 14
-      alignment: 6
+        x: 34
+        y: 0
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -861,11 +861,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_35
       rect:
         serializedVersion: 2
-        x: 164
-        y: 2
-        width: 40
+        x: 68
+        y: 0
+        width: 34
         height: 15
-      alignment: 6
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -882,11 +882,11 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_36
       rect:
         serializedVersion: 2
-        x: 212
-        y: 2
-        width: 53
-        height: 12
-      alignment: 6
+        x: 102
+        y: 0
+        width: 34
+        height: 15
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -903,10 +903,10 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_37
       rect:
         serializedVersion: 2
-        x: 145
-        y: 30
-        width: 13
-        height: 13
+        x: 136
+        y: 0
+        width: 34
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -924,10 +924,10 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_38
       rect:
         serializedVersion: 2
-        x: 179
-        y: 30
-        width: 13
-        height: 12
+        x: 170
+        y: 0
+        width: 34
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -945,10 +945,10 @@ TextureImporter:
       name: 34x15 Monster 1 with shadows_39
       rect:
         serializedVersion: 2
-        x: 213
-        y: 30
-        width: 13
-        height: 10
+        x: 204
+        y: 0
+        width: 34
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -958,6 +958,27 @@ TextureImporter:
       bones: []
       spriteID: ffcfe965563d1344a9d86e25f7c6cc17
       internalID: -1197570101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 34x15 Monster 1 with shadows_40
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 0
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22f7ee4cfe9ceb4590221c8559205ab
+      internalID: 91809793
       vertices: []
       indices: 
       edges: []
@@ -1008,6 +1029,7 @@ TextureImporter:
       34x15 Monster 1 with shadows_38: 645413165
       34x15 Monster 1 with shadows_39: -1197570101
       34x15 Monster 1 with shadows_4: 243165520
+      34x15 Monster 1 with shadows_40: 91809793
       34x15 Monster 1 with shadows_5: -1108816994
       34x15 Monster 1 with shadows_6: -1035415389
       34x15 Monster 1 with shadows_7: 295662068

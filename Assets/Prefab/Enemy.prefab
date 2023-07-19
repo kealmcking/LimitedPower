@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2877778484899714611}
   - component: {fileID: 2671524528239950746}
   - component: {fileID: 2826983110916183965}
+  - component: {fileID: 67485695976332353}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -742827351, guid: 568496aeddcb78e4dbe1d5572a3c69ee, type: 3}
+  m_Sprite: {fileID: 843943780, guid: e6d2e60d90354e74aa481d660fc127de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -110,6 +111,7 @@ MonoBehaviour:
   m_Damage: 1
   rb2D: {fileID: 2877778484899714611}
   player: {fileID: 0}
+  shouldFollowPlayer: 1
   healthDrop: {fileID: 742622696955837947, guid: 8b45175ddca7fa74cbec4f547d264eb7, type: 3}
   expDrop: {fileID: 5953793198836624756, guid: 7b79354e331fe4f438b5f8297530b2c7, type: 3}
   massExpPickup: {fileID: 6412241090458602859, guid: 4c2ef2140b41b9943be00e9da2d84005, type: 3}
@@ -177,7 +179,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.3333334, y: 1.3333334}
+    oldSize: {x: 3.4, y: 1.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -207,3 +209,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &67485695976332353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4361245430601709213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff121734cdce7754f97fcde1fecd218a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  enemy: {fileID: 0}

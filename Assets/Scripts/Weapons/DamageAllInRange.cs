@@ -12,7 +12,7 @@ public class DamageAllInRange : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision) {
         if (collision.tag == "Enemy") {
-            collision.GetComponent<Enemy>().enemyHP -= damage;
+            collision.GetComponent<Health>().health -= damage;
         }
     }
 
